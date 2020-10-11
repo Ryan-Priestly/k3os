@@ -1,0 +1,18 @@
+ssh_authorized_keys:
+- github: Ryan-Priestly
+
+hostname: k3os
+boot_cmd:
+- "echo hi from boot time && echo bye from boot time"
+init_cmd:
+- "echo hi on init && echo bye on init"
+k3os:
+  token: super-secure-local-cluster-token
+  dns_nameservers:
+  - 8.8.8.8
+  - 1.1.1.1
+  ntp_servers:
+  - 0.us.pool.ntp.org
+  - 1.us.pool.ntp.org
+  k3s_args:
+  - server
