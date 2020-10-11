@@ -1,5 +1,5 @@
 ssh_authorized_keys:
-- github: Ryan-Priestly
+- github:Ryan-Priestly
 
 hostname: k3os
 boot_cmd:
